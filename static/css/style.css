@@ -1,0 +1,546 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+@font-face {
+  font-family: 'martelbold';
+  src: url('../fonts/martel-bold-webfont.woff2') format('woff2'),
+       url('../fonts/martel-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'martelregular';
+  src: url('../fonts/martel-regular-webfont.woff2') format('woff2'),
+       url('../fonts/martel-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family:'OpenSans_Condensed-Regular';
+  src: url('../fonts/OpenSans_Condensed-Regular_1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'OpenSans_Condensed-Bold';
+  src:url('../fonts/OpenSans_Condensed-Bold_1.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+:root {
+  
+  --primary-color: #D0A144;
+  --dark-background-color: #04251f;
+  --light-blue:#0F6A9F;
+  --secondary-color: #295C7A;
+  --second-text-color:#737373;
+}
+section#home{
+  background-color: #5d8582;
+}
+section#home header{
+  height: 120px;
+
+}
+
+section#home header section.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+section#home header section.wrapper div.left{}
+section#home header section.wrapper div.left h1{
+  font-size: 25px;
+  color: white;
+}
+section#home section.wrapper div.center{}
+
+section#home section.wrapper div.center ul{
+  display: flex;
+}
+section#home section.wrapper div.center ul li a{
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  color: white;
+}
+
+section#home section.spotlight{}
+section#home section.spotlight section.wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section#home section.spotlight section.wrapper section.textcontent{}
+section#home section.spotlight section.wrapper section.textcontent div.first{
+  margin-top: 80px;
+}
+section#home section.spotlight section.wrapper section.textcontent div.first h1{
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+section#home section.spotlight section.wrapper section.textcontent div.second{
+  margin-top: 50px;
+}
+section#home section.spotlight section.wrapper section.textcontent div.second p{
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+section#home section.spotlight section.wrapper section.textcontent div.third{
+  margin-top: 50px;
+}
+section#home section.spotlight section.wrapper section.textcontent div.third ul{
+  display: flex;
+  margin-right: 50px;
+  margin-left: 30px;
+}
+section#home section.spotlight section.wrapper section.textcontent div.third ul li.button1 a{
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: goldenrod;
+  margin-right: 25px;
+
+}
+section#home section.spotlight section.wrapper section.textcontent div.third ul li.button2 a{
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  border: 1px solid;
+  border-color: white;
+}
+section#home section.spotlight section.wrapper section.imgcontent{
+  height: 550px;
+
+}
+section#home section.spotlight section.wrapper section.imgcontent img{
+  height: 100%;
+  
+}
+section#practice{
+  background-color: var(--dark-background-color);
+}
+section#practice section.wrapper{
+
+}
+section#practice section.wrapper div.top{
+  padding-top: 150px;
+
+}
+section#practice section.wrapper div.top h1{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+section#practice section.wrapper div.top p{
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+section#practice section.wrapper div.boxset{
+  padding-top: 70px;
+  padding-bottom: 150px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+section#practice section.wrapper div.boxset div.box{
+  background-color: #fff;
+  width: 300px;
+  height: 150px;
+  text-align: center;
+  align-items: center;
+  
+}
+section#practice section.wrapper div.boxset div.box h4 img{
+  margin-top: 30px;
+ 
+}
+section#practice section.wrapper div.boxset div.box h3{
+  
+}
+section#practice section.wrapper div.boxset div.box.mid{
+  background-color: var(--light-blue);
+}
+
+
+section#advice{
+  background-color: var(--dark-background-color);
+}
+section#advice section.wrapper{}
+section#advice section.wrapper div.top{}
+section#advice section.wrapper div.top h1{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+section#advice section.wrapper div.top p{
+  padding-top: 40px;
+  text-align: center;
+  color: white;
+}
+section#advice section.wrapper div.bottom{
+  display: flex;
+}
+section#advice section.wrapper div.bottom div.photo{
+  
+  margin: 10px;
+  padding-top: 20px;
+  width: 23%;
+  height: 300px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+section#advice section.wrapper div.bottom div.photo h3{
+  color: black;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+section#advice section.wrapper div.bottom div.photo p{
+  color: gray;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+section#advice section.wrapper div.bottom div.photo img{
+  padding-top: 10px;
+  height: 50%;
+  width: 100%;
+  
+}
+
+section#who{
+  background-color: var(--dark-background-color);
+}
+section#who section.wrapper{}
+section#who section.wrapper div.topw{}
+section#who section.wrapper div.topw h1{
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+section#who section.wrapper div.topw p{
+  padding-top: 30px;
+  color: #fff;
+  text-align: center;
+}
+section#who section.wrapper div.bottom{
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+section#who section.wrapper div.bottom div.left{
+  position: relative;
+}
+section#who section.wrapper div.bottom div.left img{}
+section#who section.wrapper div.bottom div.left div.play{
+  position: absolute;
+  top: 45%;
+  right: 45%;
+  background-color: var(--dark-background-color);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+section#who section.wrapper div.bottom div.right{
+  
+
+}
+section#who section.wrapper div.bottom div.right h1{
+  font-size: 35px;
+  color: #fff;
+  padding-bottom: 25px;
+}
+section#who section.wrapper div.bottom div.right p{
+  color: #fff;
+  padding-bottom: 30px;
+  
+}
+section#who section.wrapper div.bottom div.right div.pwp p{
+  margin-left: 50px;
+  position: relative;
+  top: -30px;
+}
+section#who section.wrapper div.bottom div.right div.pwp a img{
+  
+}
+
+section#get{
+  background-color: var(--dark-background-color);
+}
+section#get section.wrapper{
+  
+}
+section#get section.wrapper div.top{}
+section#get section.wrapper div.top h1{
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+}
+section#get section.wrapper div.top p{
+  text-align: center;
+  color: white;
+
+}
+section#get section.wrapper div.bottom{
+  padding-left: 180px;
+  padding-top: 80px;
+  display: flex;
+}
+section#get section.wrapper div.bottom div.box{
+  padding: 50px;
+  background-color: #fff;
+
+}
+section#get section.wrapper div.bottom div.box.center{
+  background-color: var(--light-blue);
+  margin-top: -30px;
+  margin-bottom: -30px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+
+}
+section#get section.wrapper div.bottom div.box{
+  text-align: center;
+}
+section#get section.wrapper div.bottom div.box img{
+}
+section#get section.wrapper div.bottom div.box p a{
+  padding-bottom: 30px;
+}
+section#get section.wrapper div.bottom div.box h3{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+section#get section.wrapper div.bottom div.box h5 a{
+  padding: 7px 11px;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+}
+section#get section.wrapper div.bottom div.box.center img{
+  margin-top: 35px;
+}
+section#get section.wrapper div.bottom div.box.center p a{
+  color: #fff;
+}
+section#get section.wrapper div.bottom div.box.center h3{
+  color: #fff;
+}
+section#get section.wrapper div.bottom div.box.center h5 a{
+  border-color: #fff;
+  color: #fff;
+}
+
+
+section#foot{
+  background-color: var(--dark-background-color);
+}
+section#foot section.wrapper{
+  color: var(--dark-background-color);
+}
+section#foot section.wrapper div.top{
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+section#foot section.wrapper div.top div.left{}
+section#foot section.wrapper div.top div.left h3{
+  color: #fff;
+  font-size: 25px;
+}
+section#foot section.wrapper div.top div.left p{
+  color: #fff;
+  font-size: 13px;
+  padding-top: 6px;
+  padding-bottom: 11px;
+}
+section#foot section.wrapper div.top div.right{}
+section#foot section.wrapper div.top div.right p a{
+  padding: 8px 20px;
+  background-color: goldenrod;
+  border-radius: 5px;
+
+}
+
+section#foot{}
+section#foot section.wrapper{}
+section#foot section.wrapper div.top{}
+section#foot section.wrapper div.top div.left{}
+section#foot section.wrapper div.top div.left h3{}
+section#foot section.wrapper div.top div.right p{}
+section#foot section.wrapper div.top div.right{}
+section#foot section.wrapper div.top div.right p a{}
+section#foot div.bottom{
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--light-blue);
+  
+}
+section#foot div.bottom div.list{
+  
+}
+section#foot div.bottom div.list.last{
+  display: flex;
+  
+  
+}
+section#foot div.bottom div.list h4{
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+section#foot div.bottom div.list img{
+  justify-content:space-between;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+section#foot div.bottom div.list p{
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+section#foot div.end{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 17px;
+}
+section#foot div.end div.left{}
+section#foot div.end div.left p{
+  color: #fff;
+  font-size: 13px;
+}
+section#foot div.end div.right{}
+section#foot div.end div.right img{
+  margin-left: 20px;
+}
+
+
+@media all and (max-width:1280px){
+  section#who section.wrapper div.bottom div.left img{
+    margin-right: 20px;
+  }
+  section#get section.wrapper div.bottom{
+    padding-left: 35px;
+  }
+}
+@media all and (max-width:980px){
+  section#who section.wrapper div.bottom{
+    flex-direction: column;
+  }
+  section#who section.wrapper div.bottom div.left img{
+    margin-left: 50px;
+  }
+  section#who section.wrapper div.bottom div.right{
+    margin-left: 220px;
+    margin-top: 30px;
+    
+  }
+  section#get section.wrapper div.bottom{
+    margin-left: -70px;
+  }
+  ul li.button2 a{
+    
+  }
+  section#home section.spotlight section.wrapper section.textcontent div.third ul{
+    flex-wrap: wrap;
+  }
+  section#home section.spotlight section.wrapper section.textcontent div.third ul li{
+    margin-top: -20px;
+    margin-bottom: 50px;
+  }
+  section#home section.spotlight section.wrapper section.textcontent div.third ul li.button1 a{
+    margin-right: 2px;
+  }
+  section#advice section.wrapper div.bottom{
+    flex-wrap: wrap;
+  }
+  section#advice section.wrapper div.bottom div.photo{
+    width: 47%;
+    height: 100%;
+  }
+  section#get section.wrapper div.bottom div.box{
+    width: 35%;
+  }
+  section#get section.wrapper div.bottom{
+    margin-left: 30px;
+  }
+  section#get section.wrapper div.bottom div.box p a{
+    margin-left: -25px;
+  }
+  section#get section.wrapper div.bottom div.box.center p a{
+    margin-left: 4px;
+  }
+}
+@media all and (max-width:768px){
+  
+}
+@media all and (max-width:640px){
+  
+}
+@media all and (max-width:480px){
+  
+}
+@media all and (max-width:360px){
+  
+}

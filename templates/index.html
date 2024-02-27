@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+  <section id="home">
+    <header>
+      <section class="wrapper">
+        <div class="left">
+          <h1>Legalide</h1>
+        </div>
+        <div class="center">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Prodect</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://www.google.com/" target="_blank"><img src="{% static '/images/search-icon.png' %}" alt=""></a></li>
+            <li><a href="https://www.myntra.com/" target="_blank"><img src="{% static '/images/icn shopping-cart .icn-xs.png' %}" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="https://www.merriam-webster.com/dictionary/menu" target="_blank"><img src="{% static '/images/menu.png' %}" alt=""></a></li>
+          </ul>
+        </div>
+      </section>
+    </header>
+    <section class="spotlight">
+      <section class="wrapper">
+        <section class="textcontent">
+          <div class="first">
+            <h1>LEGAL PRO <br> SERVICE</h1>
+          </div>
+          <div class="second">
+            <p>we know how larg objects will act, but things on a <br> small scale just do not act that way</p>
+          </div>
+          <div class="third">
+            <ul>
+              <li class="button1"><a href="#">Get quat now</a></li>
+              <li class="button2"><a href="#">learn more</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="imgcontent">
+          <img src="{% static '/images/Cover-photo-1.png' %}" alt="photo">
+        </section>
+      </section>
+    </section>
+  </section>
+
+   <section id="practice">
+    <section class="wrapper">
+      <div class="top">
+        <h1>Our Practice Areas</h1>
+        <p>problems trying to resolve the confict between <br> the two major reelsm of classical phycics: newtonian mechanics</p>
+
+      </div>
+      <div class="boxset">
+        {% for practice in practices %}
+        <div class="box">
+          <h4><img src="{% static '/images/Trust&Estates-icon.png' %}" alt=""></h4>
+          <h3>family low</h3>
+        </div>
+        {% endfor %}
+        
+
+      </div>
+    </section>
+   </section>   
+   <section id="advice">
+    <section class="wrapper">
+      <div class="top">
+        <h1>Practice Advice</h1>
+        <p>problems trying to resolve the confict between <br> the two major reelsm of classical phycics: newtonian mechanics</p>
+
+      </div>
+      <div class="bottom">
+        <div class="photo">
+          <h3>Frauds or <br> Mislead</h3>
+          <p>Newton thought that light <br> was made up of particles, <br>but then it was discovered</p>
+          <img src="{% static '/images/practices-advise-photo1.png' %}" alt="">
+        </div>
+        <div class="photo">
+          <h3>Bailes & <br> Warrants</h3>
+          <p>"Quantum mechanics" is <br>the description of the <br>behaviour of matter</p>
+          <img src="{% static '/images/practices-advise-photo2.png' %}" alt="">
+        </div>
+        <div class="photo">
+          <h3>Federal Drug <br> Crimes</h3>
+          <p>They describe a universe <br>consisting of bodies <br>moving</p>
+          <img src="{% static '/images/practices-advise-photo3.png' %}" alt="">
+        </div><br> 
+        <div class="photo">
+          <h3>Traffic Related <br> Crimes</h3>
+          <p>They finally obtained a <br>consistent description of <br>the behaviour</p>
+          <img src="{% static '/images/practices-advise-photo4.png' %}" alt="">
+        </div>
+      </div>
+    </section>
+   </section>
+   <section id="who">
+    <section class="wrapper">
+      <div class="topw">
+        <h1>Who We Are</h1>
+        <p>problem trying to resolve the conflict between two major realm of <br> classical phycics: newtonian mechanics</p>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <img src="{% static '/images/cover-photo-2.png' %}" alt="">
+          <div class="play"><img src="{% static '/images/play-button.png' %}" alt=""></div>
+        </div>
+        <div class="right">
+          <h1>Most Trusted In <br> Our Field</h1>
+          <p>Most calendars are designed for teams. Slate is <br> designed for freelancers who want a simple way <br> to plan their schedule</p>
+          <div class="pwp">
+            <a href="#"><img src="{% static '/images/people-icon.png' %}" alt=""></a>
+            <p>The quick fox jumps over the lazy <Br> dog <Br> things on a very small scale …</p>
+            <a href="#"><img src="{% static '/images/speed-icon.png' %}" alt=""></a>
+            <p>The quick fox jumps over the lazy <Br> dog <Br> things on a very small scale …</p>
+          </div>
+        </div>
+      </div> 
+    </section>
+   </section>
+
+<section id="get">
+  <section class="wrapper">
+    <div class="top">
+      <h1>Get In Touch</h1>
+      <p>problem trying to resolve the conflict between two major realm of <br> classical phycics: newtonian mechanics</p>
+
+    </div>
+    <div class="bottom">
+      <div class="box">
+        <img src="{% static '/images/call-icon.png' %}" alt="">
+        <p><a href="#">georgia.young@example.com</a></p>
+        <p><a href="#">georgia.young@ple.com</a></p>
+        <h3>Get Support</h3>
+        <h5><a href="#">Submit Request</a></h5>
+
+      </div>
+      <div class="box center">
+        <img src="{% static '/images/location-icon.png' %}" alt="">
+        <p><a href="#">georgia.young@example.com</a></p>
+        <p><a href="#">georgia.young@ple.com</a></p>
+        <h3>Get Support</h3>
+        <h5><a href="#">Submit Request</a></h5>
+
+      </div>
+      <div class="box">
+        <img src="{% static '/images/send-icon.png' %}" alt="">
+        <p><a href="#">georgia.young@example.com</a></p>
+        <p><a href="#">georgia.young@ple.com</a></p>
+        <h3>Get Support</h3>
+        <h5><a href="#">Submit Request</a></h5>
+
+      </div>
+    </div>
+  </section>
+</section>
+  
+<section id="foot">
+  <section class="wrapper">
+    <div class="top">
+      <div class="left">
+        <h3>Request A Free Consaltation</h3>
+        <p>The quick fox jumps over the lszy dog</p>
+
+      </div>
+      <div class="right">
+        <p><a href="https://wa.me/8075659325">Contact Us</a></p>
+      </div>
+    </div>
+  </section>
+    <div class="bottom">
+      <div class="list">
+        <h4>Company Info</h4>
+        <p>About Us</p>
+        <p>carrier</p>
+        <p>We Are Hearing</p>
+        <p>blog</p>
+
+      </div>
+      <div class="list">
+        <h4>Legal</h4>
+        <p>About Us</p>
+        <p>Carrier</p>
+        <p>WE Are hiring</p>
+        <p>Blog</p>
+
+      </div>
+      <div class="list">
+        <h4>Features</h4>
+        <p>Business Marketting</p>
+        <p>User Analitic</p>
+        <p>Live Chat</p>
+        <p>Unlimited Support</p>
+
+      </di5v>
+      <div class="list">
+        <h4>Resources</h4>
+        <p>IOS & Android</p>
+        <p>Watch A Demo</p>
+        <p>Customers</p>
+        <p>API</p>
+
+      </div>
+      <div class="list last">
+        <div class="number">
+          <h4>Get In Touch</h4>
+          <p><img src="{% static '/images/call-icon-white.png' %}" alt="">(480) 555-0103</p>
+          <p><img src="{% static '/images/location-icon.png' %}" alt="">4517 Washington Ave.</p>
+          <p><img src="{% static '/images/send-icon-white.png' %}" alt="">debra.holt@example.com</p>
+        </div>
+      </div>
+    </div>
+    <section class="wrapper">
+    <div class="end">
+      <div class="left">
+        <p>Made With Love By Figmalad All Right Reserved</p>
+      </div>
+      <div class="right">
+        <img src="{% static '/images/facebook.png' %}" alt="">
+        <img src="{% static '/images/insta.png' %}" alt="">
+        <img src="{% static '/images/twitter.png' %}" alt="">
+        <img src="{% static '/images/youtube-icon.png' %}" alt="">
+      </div>
+    </div>
+  </section>
+</section>
+  
+
+
+    
+      
+
+  
+</body>
+</html>
